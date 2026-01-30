@@ -143,49 +143,53 @@
 <section class="hero">
 
   <!-- SVG LOGO -->
-  <svg width="360" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
-    <rect width="1200" height="600" fill="none"/>
+  <svg viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- background -->
+  <rect width="1200" height="600" fill="#000"/>
 
-    <circle cx="360" cy="300" r="210" fill="#63CBEF"/>
+  <!-- main circle -->
+  <circle cx="360" cy="300" r="210" fill="#63CBEF"/>
 
-    <!-- G curve -->
-    <path
-      d="M 360 90
-         A 210 210 0 1 0 570 300"
-      fill="none"
-      stroke="#FF3A3A"
-      stroke-width="22"
-      stroke-linecap="round"/>
+  <!-- red G arc (270 degrees clockwise) -->
+  <path
+    d="M 360 90
+       A 210 210 0 1 0 570 300"
+    fill="none"
+    stroke="#FF3A3A"
+    stroke-width="22"
+    stroke-linecap="round"
+  />
 
-    <!-- Arrow shaft -->
-    <line x1="570" y1="300" x2="360" y2="300"
-          stroke="#FF3A3A" stroke-width="22"
-          stroke-linecap="round"/>
+  <!-- arrow shaft -->
+  <line x1="570" y1="300" x2="360" y2="300"
+        stroke="#FF3A3A" stroke-width="22" stroke-linecap="round"/>
 
-    <!-- Arrowhead -->
-    <polygon
-      points="360,300 395,275 395,325"
-      fill="#FF3A3A"/>
+  <!-- big half-square arrowhead pointing to circle center -->
+  <polygon points="340,300 390,270 390,330" fill="#FF3A3A"/>
 
-    <!-- Shapes -->
-    <circle cx="215" cy="300" r="42" fill="#B875E6"/>
-    <rect x="195" y="280" width="40" height="40" fill="#E64B8C"/>
+  <!-- text next to G -->
+  <text x="600" y="325"
+        font-size="96"
+        font-weight="700"
+        font-family="Arial, Helvetica, sans-serif"
+        fill="#FF3A3A"
+        text-anchor="start">
+    eopherse
+  </text>
 
-    <!-- Plus -->
-    <g stroke="#333" stroke-width="8" stroke-linecap="round">
-      <line x1="270" y1="350" x2="270" y2="410"/>
-      <line x1="240" y1="380" x2="300" y2="380"/>
-    </g>
+  <!-- decorative purple circle -->
+  <circle cx="215" cy="300" r="42" fill="#B875E6"/>
 
-    <!-- Text -->
-    <text x="620" y="325"
-          font-size="96"
-          font-weight="700"
-          font-family="Arial, Helvetica, sans-serif"
-          fill="#FF3A3A">
-      eopherse
-    </text>
-  </svg>
+  <!-- decorative pink square -->
+  <rect x="195" y="280" width="40" height="40" fill="#E64B8C"/>
+
+  <!-- plus sign -->
+  <g stroke="#333" stroke-width="8" stroke-linecap="round">
+    <line x1="270" y1="350" x2="270" y2="410"/>
+    <line x1="240" y1="380" x2="300" y2="380"/>
+  </g>
+</svg>
+
 
   <h1>Geopherse</h1>
 
